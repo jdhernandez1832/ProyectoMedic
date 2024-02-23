@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.10" multi-file="no" uid="simp810608cbe6f4471f83a75bb63adf2352" creation-date="02/23/2024 08:28:48">
+  <meta>
+    <name>citas</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="containment" type="Containment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>3</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-32030e58241a42daa4426b00e77a7132" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-989317f4832d47c792136ee3eeb8925e" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="int" name="int" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p2bc80385b6214b389f281c91ad28459f_137297848" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>02/23/2024 08:28:49</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="pd72b0df9bc13442e9180ae72f3d0e186_891141346" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="51,-160">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/23/2024 08:28:49</creation-date>
+          <change-date>02/23/2024 08:35:17</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="d6e501c466394de89eb240d8b5bbbdc2" cid="PROP002" type="property" name="nombre" owner="cb682ce10e804a3f880ceab68ae3a10a" creator="" creation-date="02/23/2024 08:32:34" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="2c8b7caaede54fdeaa1d0a3ab33a6e50" cid="PKG001" type="package" name="Package1" creator="" creation-date="02/23/2024 08:28:56" />
+          <item id="98fa4b62a15b4bcfa2589516f1b16394" cid="PROP003" type="property" name="apellido" owner="cb682ce10e804a3f880ceab68ae3a10a" creator="" creation-date="02/23/2024 08:32:56" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="4054e10ca53d4bee9cbdfbf91ac32a7f" cid="PKG002" type="package" name="entities" creator="" creation-date="02/23/2024 08:30:28">
+            <owned-items />
+          </item>
+          <item id="cb682ce10e804a3f880ceab68ae3a10a" cid="C001" type="class" name="Medico" owner="4054e10ca53d4bee9cbdfbf91ac32a7f" creator="" creation-date="02/23/2024 08:30:55">
+            <owned-items />
+            <attributes>
+              <attribute id="a1e748f33cab2459ab1dd7e85b7b76d7f319" cid="PROP001" name="id" creation-date="02/23/2024 08:31:10" property-ref="66e4a9da163a45b998449b52067c6878" />
+              <attribute id="ad1d2d9d88cfb442e86bb963d41f63849966" cid="PROP002" name="nombre" creation-date="02/23/2024 08:32:34" property-ref="d6e501c466394de89eb240d8b5bbbdc2" />
+              <attribute id="a2dcf291796084942a2f62e00246757f7661" cid="PROP003" name="apellido" creation-date="02/23/2024 08:32:56" property-ref="98fa4b62a15b4bcfa2589516f1b16394" />
+            </attributes>
+            <operations>
+              <operation id="o488318f104024134a5526f84940a14ad413" cid="OP001" name="GetApellido" creation-date="02/23/2024 08:35:08" type="String" type-id="Uml.String" visibility="public">
+                <stereotypes>
+                  <stereotype>getter</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o7faf91fbecc34d9ab7c2b78cc2e92a4c414" cid="OP002" name="SetApellido" creation-date="02/23/2024 08:35:08" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pb0ea13b1c9034049a71d5db5397216a6" name="apellido" type="String" type-id="Uml.String" creation-date="02/23/2024 08:35:08" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>setter</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+          </item>
+          <item id="66e4a9da163a45b998449b52067c6878" cid="PROP001" type="property" name="id" owner="cb682ce10e804a3f880ceab68ae3a10a" creator="" creation-date="02/23/2024 08:31:10" visibility="private">
+            <structural-feature type="int" type-id="int" />
+            <property />
+          </item>
+        </abstract-items>
+        <layer id="3618a5afe2ab488b841388f6be899432" name="Default" visible="true" enabled="true" locked="false">
+          <item id="4054e10ca53d4bee9cbdfbf91ac32a7f" iid="dad1ac0a70c0448397b0e91246b010c3" creation-date="02/23/2024 08:30:28" order-index="0" type="entity">
+            <layout ax="549" ay="13" awidth="719" aheight="424" x="549" y="13" width="719" height="424" expanded="549,13,719,424" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+          <item id="cb682ce10e804a3f880ceab68ae3a10a" iid="38b3eea2fc054015ba7c01e5d52a29f9" container="4054e10ca53d4bee9cbdfbf91ac32a7f" container-iid="dad1ac0a70c0448397b0e91246b010c3" show-fields="true" creation-date="02/23/2024 08:30:55" order-index="1" type="entity">
+            <layout ax="595" ay="53" awidth="140" aheight="252" x="595" y="53" width="140" height="252" />
+            <classifier />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

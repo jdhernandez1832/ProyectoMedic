@@ -45,7 +45,7 @@ public class Main {
         c.setConsultorio(Co);
         c.setEstado(Estado.AGENDADA);
         c.setFecha(LocalDateTime.now());
-        System.out.println("nombre del medico: "+c.getMedico().getNombre() +"| Nombre del paciente: "+c.getPaciente().getNombre()+"| Estado de la cita: "+c.getEstado()+"| Fecha: "+c.getFecha());
+        System.out.println("Nombre del medico: "+c.getMedico().getNombre() +"| Nombre del paciente: "+c.getPaciente().getNombre()+"| Estado de la cita: "+c.getEstado()+"| Fecha: "+c.getFecha());
 
     }
 }
