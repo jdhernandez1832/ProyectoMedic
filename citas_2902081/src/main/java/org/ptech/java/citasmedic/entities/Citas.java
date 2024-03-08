@@ -2,27 +2,29 @@ package org.ptech.java.citasmedic.entities;
 
 import java.time.LocalDateTime;
 
-import org.ptech.java.citasmedic.entities.enums.Estado;
 
 public class Citas {
     private int id;
     private LocalDateTime fecha;
-    private Medico medico;
     private Paciente paciente;
     private Consultorio consultorio;
-    private Estado estado;
     
     public Citas() {
     }
 
-    public Citas(int id, LocalDateTime fecha, Medico medico, Paciente paciente, Consultorio consultorio,
-            Estado estado) {
+    public Citas(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio) {
         this.id = id;
         this.fecha = fecha;
-        this.medico = medico;
         this.paciente = paciente;
         this.consultorio = consultorio;
-        this.estado = estado;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public LocalDateTime getFecha() {
@@ -31,14 +33,6 @@ public class Citas {
 
     public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
-    }
-
-    public Medico getMedico() {
-        return medico;
-    }
-
-    public void setMedico(Medico medico) {
-        this.medico = medico;
     }
 
     public Paciente getPaciente() {
@@ -57,13 +51,6 @@ public class Citas {
         this.consultorio = consultorio;
     }
 
-    public Estado getEstado() {
-        return estado;
-    }
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
-    }
-    
-    
+
 }

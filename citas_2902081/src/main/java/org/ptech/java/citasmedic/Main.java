@@ -3,6 +3,7 @@ package org.ptech.java.citasmedic;
 import java.time.LocalDateTime;
 
 import org.ptech.java.citasmedic.entities.Citas;
+import org.ptech.java.citasmedic.entities.CitasMedicos;
 import org.ptech.java.citasmedic.entities.Consultorio;
 import org.ptech.java.citasmedic.entities.Enfermero;
 import org.ptech.java.citasmedic.entities.Medico;
@@ -71,5 +72,7 @@ public class Main {
         for(String pc : e1.getProcedimiento()){
             System.out.println("Procedimiento " + pc);
         }
+
+    
     }
 }

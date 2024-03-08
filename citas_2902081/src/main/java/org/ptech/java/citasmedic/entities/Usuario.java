@@ -7,7 +7,7 @@ import org.ptech.java.citasmedic.entities.enums.TipoDocumento;
 //clase maestra
 //clase base
 //clase superior
-public  abstract class Usuario {
+public class Usuario {
     //atributos heredados
     //deben ser protected
 
@@ -17,7 +17,16 @@ public  abstract class Usuario {
     protected TipoDocumento tipoIdentificacion;
     protected int numeroDocumento;
     
+    //sobreescribir el metodo toString
+    
+    
     public Usuario() {
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", tipoIdentificacion="
+                + tipoIdentificacion + ", numeroDocumento=" + numeroDocumento + "]";
     }
 
     public Usuario(int id, String nombre, String apellido, TipoDocumento tipoIdentificacion, int numeroDocumento) {
@@ -67,5 +76,6 @@ public  abstract class Usuario {
     public void setNumeroDocumento(int numeroDocumento) {
         this.numeroDocumento = numeroDocumento;
     }
+    
     
 }
