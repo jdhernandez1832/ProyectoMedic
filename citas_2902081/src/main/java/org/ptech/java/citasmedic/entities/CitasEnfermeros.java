@@ -9,25 +9,27 @@ public class CitasEnfermeros extends Citas implements IAgendable {
 
     private String procedimientoRealizar;
 
-    Paciente paciente;
+   
     Enfermero enfemero;
-   Estado estado;
+    Estado estado;
+
+    
 
     
 
     public CitasEnfermeros(){
-        
+
     }
 
     public CitasEnfermeros(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio,
-        String procedimientoRealizar, Paciente paciente2, Enfermero enfemero, Estado estado) {
-    super(id, fecha, paciente, consultorio);
-    this.procedimientoRealizar = procedimientoRealizar;
-    paciente = paciente2;
-    this.enfemero = enfemero;
-    this.estado = estado;
-}
+            String procedimientoRealizar, Enfermero enfemero, Estado estado) {
+        super(id, fecha, paciente, consultorio);
+        this.procedimientoRealizar = procedimientoRealizar;
+        this.enfemero = enfemero;
+        this.estado = estado;
+    }
 
+    
     public String getProcedimientoRealizar() {
         return procedimientoRealizar;
     }
@@ -36,20 +38,20 @@ public class CitasEnfermeros extends Citas implements IAgendable {
         this.procedimientoRealizar = procedimientoRealizar;
     }
 
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
-    }
-
     public Enfermero getEnfemero() {
         return enfemero;
     }
 
     public void setEnfemero(Enfermero enfemero) {
         this.enfemero = enfemero;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
     }
 
     @Override
