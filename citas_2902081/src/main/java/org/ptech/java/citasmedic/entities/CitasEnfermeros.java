@@ -14,11 +14,10 @@ public class CitasEnfermeros extends Citas implements IAgendable {
     Estado estado;
 
     
-
-    
-
-    public CitasEnfermeros(){
-
+    public CitasEnfermeros(String procedimientoRealizar, Enfermero enfemero, Estado estado) {
+        this.procedimientoRealizar = procedimientoRealizar;
+        this.enfemero = enfemero;
+        this.estado = estado;
     }
 
     public CitasEnfermeros(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio,
@@ -29,7 +28,6 @@ public class CitasEnfermeros extends Citas implements IAgendable {
         this.estado = estado;
     }
 
-    
     public String getProcedimientoRealizar() {
         return procedimientoRealizar;
     }

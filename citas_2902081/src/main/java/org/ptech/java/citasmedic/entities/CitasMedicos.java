@@ -14,16 +14,25 @@ public class CitasMedicos extends Citas implements IAgendable{
         MotivoConsulta = motivoConsulta;
     }
 
-    public CitasMedicos(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio,
-            String motivoConsulta) {
-        super(id, fecha, paciente, consultorio);
-        this.estado=Estado.AGENDADA;
+    
+
+    public CitasMedicos(String motivoConsulta, Medico medico, Estado estado) {
         MotivoConsulta = motivoConsulta;
+        this.medico = medico;
+        this.estado = estado;
     }
 
-    public CitasMedicos(){
-        
+
+
+    public CitasMedicos(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio, String motivoConsulta,
+            Medico medico, Estado estado) {
+        super(id, fecha, paciente, consultorio);
+        MotivoConsulta = motivoConsulta;
+        this.medico = medico;
+        this.estado = estado;
     }
+
+
 
     public String getMotivoConsulta() {
         return MotivoConsulta;
